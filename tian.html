@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>css实现田字格</title>
+
+<style>
+.tian {
+  color: #4CB8FC;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  border: 1px solid #C1C1C1;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+}
+.tian .horizontal {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  border-bottom: 2px dashed #D8D8D8;
+  top: 0;
+  left: 0;
+}
+.tian .vertical {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  border-right: 2px dashed #D8D8D8;
+  top: 0;
+  left: 0;
+}
+.tian .text {
+  position: relative;
+  line-height: 3rem
+}
+.href{
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+  <div class="tian">
+    <div class="horizontal"></div>
+    <div class="vertical"></div>
+    <div class="text">夫</div>
+  </div>
+  <div class="href">
+    <a href="http://jsbin.com/nenuyuvefu/1/edit?html,css,output">到JSBIN编辑</a>
+  </div>
+</body>
+</html>
